@@ -8,7 +8,7 @@ import Foundation
 
 extension Date {
     // This will create a shortcut to get a readable string from the date with hours and minutes
-    var dateAndTime: String {
+    var dateAndTimeText: String {
         /// Will avoid any date component inside just the hours and minutes
         let timeText = formatted(date: .omitted, time: .shortened)
         if Locale.current.calendar.isDateInToday(self) {
